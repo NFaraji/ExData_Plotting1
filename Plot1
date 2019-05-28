@@ -15,6 +15,7 @@ SetTime <-strptime(paste(subsetdata$Date, subsetdata$Time, sep=" "),"%d/%m/%Y %H
 subsetdata <- cbind(SetTime, subsetdata)
 
 #Plot1
+png("plot1.png", width=480, height=480)
 hist(Global_active_power, xlab = "Global Active Power (kilowatts", main = "Global Active Power", col = "red")
-
+dev.off()
 
